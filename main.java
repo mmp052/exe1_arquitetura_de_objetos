@@ -25,11 +25,17 @@ public class main {
                 Restaurante restaurante = new Restaurante(nomeRestaurante, avaliacao);
                 Restaurantes.add(restaurante);
 
-
-
-
             }
             
+
+            if(opcao.equals("2")){
+                System.out.println("Restaurantes Cadastrados:");
+                for (int i = 0; i < Restaurantes.size(); i++){
+                    System.out.println(i + ":" + Restaurantes.get(i).nome);
+                    Restaurantes.get(i).imprimir_menu();
+                }
+            }
+
         }
     }
 }
