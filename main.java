@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class main {
     public static void main(String[] args) {
     
-        ArrayList<Item> items = new ArrayList<Item>();
+        ArrayList<Restaurante> Restaurantes = new ArrayList<Restaurante>();
         Scanner scanner = new Scanner(System.in);
 
         while (true){
@@ -17,7 +17,13 @@ public class main {
             System.out.println("Escolha uma opção");
             String opcao = scanner.nextLine();
 
-            
+            if(opcao.equals("2")){
+                System.out.println("Restaurantes Cadastrados:");
+                for (int i = 0; i < Restaurantes.size(); i++){
+                    System.out.println(i + ":" + Restaurantes.get(i).nome);
+                    Restaurantes.get(i).imprimir_menu();
+                }
+            }
         }
     }
 }

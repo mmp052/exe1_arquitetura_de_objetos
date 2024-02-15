@@ -15,7 +15,11 @@ public class Restaurante {
         System.out.println("nome" + this.nome);
     }
 
-    public void adicionar_item(){
+    public void adicionar_item(Item item){
+        this.cardapio.add(item);
+    }
+
+    public void imprimir_menu(){
         for(Item item : this.cardapio){
             System.out.println(item.nome + " : " + item.preco);
         }
