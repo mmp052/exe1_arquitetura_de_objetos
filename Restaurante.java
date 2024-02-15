@@ -2,13 +2,12 @@ import java.util.ArrayList;
 
 public class Restaurante {
     public String nome;
-    public double avaliacao;
+    public String avaliacao;
     public ArrayList<Item> cardapio;
 
-    public Restaurante(String nome,double avaliacao,ArrayList<Item> cardapio){
+    public Restaurante(String nome,String avaliacao){
         this.nome = nome;
         this.avaliacao = avaliacao;
-        this.cardapio = cardapio;
     }
 
     public void get_nome(){

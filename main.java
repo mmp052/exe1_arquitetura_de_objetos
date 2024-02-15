@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class main {
     public static void main(String[] args) {
     
-        ArrayList<Item> items = new ArrayList<Item>();
+        ArrayList<Restaurante> Restaurantes = new ArrayList<Restaurante>();
         Scanner scanner = new Scanner(System.in);
 
         while (true){
@@ -14,9 +14,21 @@ public class main {
             System.out.println("3. Cadastrar item no menu de um restaurante");
             System.out.println("4. Sair");
 
-            System.out.println("Escolha uma opção");
+            System.out.println("Escolha uma opção:");
             String opcao = scanner.nextLine();
 
+            if(opcao.equals("1")){
+                System.out.println("Digite o nome do restaurante:");
+                String nomeRestaurante = scanner.nextLine();
+                System.out.println("Digite a avaliação do restaurante:");
+                String avaliacao = scanner.nextLine();
+                Restaurante restaurante = new Restaurante(nomeRestaurante, avaliacao);
+                Restaurantes.add(restaurante);
+
+
+
+
+            }
             
         }
     }
