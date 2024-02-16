@@ -5,9 +5,11 @@ public class Restaurante {
     public String avaliacao;
     public ArrayList<Item> cardapio;
 
+
     public Restaurante(String nome,String avaliacao){
         this.nome = nome;
         this.avaliacao = avaliacao;
+        cardapio = new ArrayList<>();
     }
 
     public void get_nome(){
